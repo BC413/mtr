@@ -1,0 +1,30 @@
+# This is a basic workflow that is manually triggered
+name: Node.js CI
+
+on:
+  push:
+    branches: [ test-action ]
+  pull_request:
+    branches: [ test-action ]
+
+jobs:
+  test:
+    name: Test on node ${{ matrix.node_version }} and ${{ matrix.os }}
+    runs-on: ${{ matrix.os }}
+    strategy:
+      matrix:
+        node_version: ['8', '10', '12']
+        os: [ubuntu-latest]
+
+    steps:
+    - uses: actions/checkout@v1
+    - name: Use Node.js ${{ matrix.node_version }}
+      uses: actions/setup-node@v1
+      with:
+        node-version: ${{ matrix.node_version }}
+
+    - name: npm install, build and test
+      run: |
+        yarn
+        yarn add -D vuepress
+        yarn docs:dev
