@@ -31,4 +31,4 @@ jobs:
       run: |
         yarn
         yarn add -D vuepress
-        vuepress dev docs
+        yarn run docs:dev
