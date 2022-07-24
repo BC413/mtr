@@ -14,8 +14,13 @@ jobs:
         uses: actions/checkout@v2 # If you're using actions/checkout@v2 - must set persist-credentials to false in most cases for the deployment to work correctly.
         with:
           persist-credentials: false
-
       - name: Install and Build
         run: |
           yarn
           yarn run docs:build
+      - name: Deploy
+        uses: JamesIves/github-pages-deploy-action@releases/v3
+        with:
+          GITHUB_TOKEN: for_push_123123
+          BRANCH: gh-pages # The branch the action should deploy to.
+
