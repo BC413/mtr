@@ -10,7 +10,7 @@ jobs:
     - name: Build and Deploy
       uses: jenkey2011/vuepress-deploy@master
       env:
-        ACCESS_TOKEN: 123123
+        ACCESS_TOKEN: adfsafas
         TARGET_REPO: BC413/mtr
         TARGET_BRANCH: gh_pages
         BUILD_SCRIPT: yarn && yarn docs:build
