@@ -13,5 +13,5 @@ jobs:
         ACCESS_TOKEN: 123123
         TARGET_REPO: BC413/mtr
         TARGET_BRANCH: gh_pages
-        BUILD_SCRIPT: yarn && yarn build
+        BUILD_SCRIPT: yarn && yarn docs:build
         BUILD_DIR: blog/.vuepress/dist/
