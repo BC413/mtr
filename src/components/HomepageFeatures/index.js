@@ -4,32 +4,29 @@ import styles from './styles.module.css';
 
 const FeatureList = [
   {
-    title: 'Easy to Use',
+    title: '简洁至上',
     Svg: require('@site/static/img/undraw_docusaurus_mountain.svg').default,
     description: (
       <>
-        Docusaurus was designed from the ground up to be easily installed and
-        used to get your website up and running quickly.
+        以 Markdown 为中心的项目结构，使界面简洁明了。
       </>
     ),
   },
   {
-    title: 'Focus on What Matters',
+    title: '高速下载',
     Svg: require('@site/static/img/undraw_docusaurus_tree.svg').default,
     description: (
       <>
-        Docusaurus lets you focus on your docs, and we&apos;ll do the chores. Go
-        ahead and move your docs into the <code>docs</code> directory.
+        提供MTRmod高速下载节点，不再因网络苦苦等待。
       </>
     ),
   },
   {
-    title: 'Powered by React',
+    title: '用爱发电',
     Svg: require('@site/static/img/undraw_docusaurus_react.svg').default,
     description: (
       <>
-        Extend or customize your website layout by reusing React. Docusaurus can
-        be extended while reusing the same header and footer.
+        由BC413发起的完全免费的文档站及下载站，不含任何商业广告！
       </>
     ),
   },
